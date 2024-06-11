@@ -4,33 +4,33 @@ import java.util.Arrays;
 
 public class Ex04_05_64p {
 
-	// ¹è¿­ b > ¹è¿­ a·Î º¹»ç
+	// ë°°ì—´ b > ë°°ì—´ aë¡œ ë³µì‚¬
 	static void copy(int[] a, int[] b) {
 		for (int i = 0; i < b.length; i++) {
 			a[i] = b[i];
 		}
-		
-		System.out.println("Á¤ º¹»ç : " + Arrays.toString(a));
+
+		System.out.println("ì • ë³µì‚¬ : " + Arrays.toString(a));
 	}
-	
-	// ¹è¿­ b > ¹è¿­ a·Î ¿ª¼ø º¹»ç
+
+	// ë°°ì—´ b > ë°°ì—´ aë¡œ ì—­ìˆœ ë³µì‚¬
 	static void rcopy(int[] a, int[] b) {
 		for (int i = 0; i < b.length; i++) {
 			a[i] = b[b.length-i-1];
 		}
-		System.out.println("¿ª º¹»ç : " + Arrays.toString(a));		
+		System.out.println("ì—­ ë³µì‚¬ : " + Arrays.toString(a));
 	}
-	
+
 	public static void main(String[] args) {
-	
+
 		int[] b = {3, 4, 1, 6, 7};
-		int[] a1 = new int[b.length]; // Á¤ º¹»ç
-		int[] a2 = new int[b.length]; // ¿ª º¹»ç
-		
-		System.out.println("¹è¿­ b : " + Arrays.toString(b));
-		
+		int[] a1 = new int[b.length]; // ì • ë³µì‚¬
+		int[] a2 = new int[b.length]; // ì—­ ë³µì‚¬
+
+		System.out.println("ë°°ì—´ b : " + Arrays.toString(b));
+
 		copy(a1, b);
-		rcopy(a2, b);		
+		rcopy(a2, b);
 	}
 
 }

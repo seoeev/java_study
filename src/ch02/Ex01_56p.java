@@ -7,15 +7,15 @@ public class Ex01_56p {
 
 	static int maxOf(int[] a) {
 		int max = a[0];
-		
+
 		for (int i = 0; i < a.length; i++) {
 			if(a[i] > max)
 				max = a[i];
 		}
-		
+
 		return max;
 	}
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Random rand = new Random();
@@ -23,18 +23,18 @@ public class Ex01_56p {
 		if (num == 0)
 			num++;
 
-		System.out.println("»ç¶÷ ¼ö : " + num);
-		
+		System.out.println("ì‚¬ëŒ ìˆ˜ : " + num);
+
 		int[] height = new int[num];
-		System.out.println("Å° °ªÀº ¾Æ·¡¿Í °°½À´Ï´Ù.");
+		System.out.println("í‚¤ ê°’ì€ ì•„ë˜ì™€ ê°™ìŠµë‹ˆë‹¤.");
 
 		for (int i = 0; i < num; i++) {
 			height[i] = 100 + rand.nextInt(90);
 			System.out.println("height["+ i +"] : " + height[i]);
 		}
-		
-		System.out.println("ÃÖ´ñ°ªÀº : " + maxOf(height));
-		
+
+		System.out.println("ìµœëŒ“ê°’ì€ : " + maxOf(height));
+
 	}
 
 }

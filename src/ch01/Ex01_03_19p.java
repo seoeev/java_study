@@ -6,24 +6,24 @@ public class Ex01_03_19p {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// ³× °ªÀÇ ÃÖ´ñ°ªÀ» ±¸ÇÏ´Â max4 ¸Ş¼­µå¸¦ ÀÛ¼ºÇÏ¼¼¿ä.
+		// ë„¤ ê°’ì˜ ìµœëŒ“ê°’ì„ êµ¬í•˜ëŠ” max4 ë©”ì„œë“œë¥¼ ì‘ì„±í•˜ì„¸ìš”.
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¿£ÅÍ ´ÜÀ§·Î a b c d¸¦ ÀÔ·Â");
+		System.out.println("ì—”í„° ë‹¨ìœ„ë¡œ a b c dë¥¼ ì…ë ¥");
 
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
 		int d = sc.nextInt();
-		
-		System.out.println("³× °ªÀÇ ÃÖ´ñ°ªÀº : " + max4(a, b, c, d) + " ÀÔ´Ï´Ù.");
-		System.out.println("¼¼ °ªÀÇ ÃÖ¼Ú°ªÀº : " + min3(a, b, c) + " ÀÔ´Ï´Ù.");
-		System.out.println("³× °ªÀÇ ÃÖ¼Ú°ªÀº : " + min4(a, b, c, d) + " ÀÔ´Ï´Ù.");
-		
+
+		System.out.println("ë„¤ ê°’ì˜ ìµœëŒ“ê°’ì€ : " + max4(a, b, c, d) + " ì…ë‹ˆë‹¤.");
+		System.out.println("ì„¸ ê°’ì˜ ìµœì†Ÿê°’ì€ : " + min3(a, b, c) + " ì…ë‹ˆë‹¤.");
+		System.out.println("ë„¤ ê°’ì˜ ìµœì†Ÿê°’ì€ : " + min4(a, b, c, d) + " ì…ë‹ˆë‹¤.");
+
 	}
 
 	static int max4(int a, int b, int c, int d) {
 		int max = a;
-		
+
 		if(b > max) {
 			max = b;
 		}
@@ -32,13 +32,13 @@ public class Ex01_03_19p {
 		}
 		if(d > max) {
 			max = d;
-		}		
+		}
 		return max;
 	}
 
 	static int min3(int a, int b, int c) {
 		int min = a;
-		
+
 		if(b < min) {
 			min = b;
 		}
@@ -50,7 +50,7 @@ public class Ex01_03_19p {
 
 	static int min4(int a, int b, int c, int d) {
 		int min = a;
-		
+
 		if(b < min) {
 			min = b;
 		}
@@ -64,6 +64,6 @@ public class Ex01_03_19p {
 		return min;
 	}
 
-	
-	
+
+
 }

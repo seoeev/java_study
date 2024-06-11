@@ -4,26 +4,26 @@ import java.util.Scanner;
 
 public class Ex06_28p {
 
-	public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        System.out.println("1ºÎÅÍ n±îÁöÀÇ ÇÕÀ» ±¸ÇÕ´Ï´Ù.");
-        System.out.print("nÀÇ °ª : ");
-        int n = sc.nextInt();
-        
-        int sum = 0;
-        int i = 1;
-        
-        while(i <= n) {
-            sum += i;
-            i++;
+        public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+
+                System.out.println("1ë¶€í„° nê¹Œì§€ì˜ í•©ì„ êµ¬í•©ë‹ˆë‹¤.");
+                System.out.print("nì˜ ê°’ : ");
+                int n = sc.nextInt();
+
+                int sum = 0;
+                int i = 1;
+
+                while(i <= n) {
+                        sum += i;
+                        i++;
+                }
+
+                System.out.println("1ë¶€í„° " + n + "ê¹Œì§€ì˜ í•©ì€ " + sum + "ì…ë‹ˆë‹¤.");
+                System.out.println("iì˜ ê°’ : "+ i);
         }
-        
-        System.out.println("1ºÎÅÍ " + n + "±îÁöÀÇ ÇÕÀº " + sum + "ÀÔ´Ï´Ù.");
-        System.out.println("iÀÇ °ª : "+ i);
-	}
-	
-	
-	
-	
+
+
+
+
 }

@@ -5,33 +5,33 @@ import java.util.Scanner;
 public class Ex04_05_22p {
 
 	public static void main(String[] args) {
-		// ¼¼ °ª ´ë¼Ò °ü°è 13 Á¾·ùÀÇ ¸ðµç Á¶ÇÕ¿¡ ´ëÇØ Áß¾Ó°ªÀ» ±¸ÇÏ¿© Ãâ·Â
+		// ì„¸ ê°’ ëŒ€ì†Œ ê´€ê³„ 13 ì¢…ë¥˜ì˜ ëª¨ë“  ì¡°í•©ì— ëŒ€í•´ ì¤‘ì•™ê°’ì„ êµ¬í•˜ì—¬ ì¶œë ¥
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¿£ÅÍ ´ÜÀ§·Î a b c¸¦ ÀÔ·Â");
+		System.out.println("ì—”í„° ë‹¨ìœ„ë¡œ a b cë¥¼ ìž…ë ¥");
 
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
-		
-		System.out.println("¼¼ °ªÀÇ Áß¾Ó°ªÀº : " + med3(a, b, c) + " ÀÔ´Ï´Ù.");
-        System.out.println("med3(3,2,1) = " + med3(3,2,1));
-        System.out.println("med3(3,2,2) = " + med3(3,2,2));
-        System.out.println("med3(3,1,2) = " + med3(3,1,2));
-        System.out.println("med3(3,2,3) = " + med3(3,2,3));
-        System.out.println("med3(2,1,3) = " + med3(2,1,3));
-        System.out.println("med3(3,3,2) = " + med3(3,3,2));
-        System.out.println("med3(3,3,3) = " + med3(3,3,3));
-        System.out.println("med3(2,2,3) = " + med3(2,2,3));
-        System.out.println("med3(2,3,1) = " + med3(2,3,1));
-        System.out.println("med3(2,3,2) = " + med3(2,3,2));
-        System.out.println("med3(1,3,2) = " + med3(1,3,2));
-        System.out.println("med3(2,3,3) = " + med3(2,3,3));
-        System.out.println("med3(1,2,3) = " + med3(1,2,3));    
-        
-        
-        
-        System.out.println("Q5_¿¬½À¹®Á¦ 5¹ø 22p");
-		System.out.println("¼¼ °ªÀÇ Áß¾Ó°ªÀº : " + med3_2(a, b, c) + " ÀÔ´Ï´Ù.");
+
+		System.out.println("ì„¸ ê°’ì˜ ì¤‘ì•™ê°’ì€ : " + med3(a, b, c) + " ìž…ë‹ˆë‹¤.");
+		System.out.println("med3(3,2,1) = " + med3(3,2,1));
+		System.out.println("med3(3,2,2) = " + med3(3,2,2));
+		System.out.println("med3(3,1,2) = " + med3(3,1,2));
+		System.out.println("med3(3,2,3) = " + med3(3,2,3));
+		System.out.println("med3(2,1,3) = " + med3(2,1,3));
+		System.out.println("med3(3,3,2) = " + med3(3,3,2));
+		System.out.println("med3(3,3,3) = " + med3(3,3,3));
+		System.out.println("med3(2,2,3) = " + med3(2,2,3));
+		System.out.println("med3(2,3,1) = " + med3(2,3,1));
+		System.out.println("med3(2,3,2) = " + med3(2,3,2));
+		System.out.println("med3(1,3,2) = " + med3(1,3,2));
+		System.out.println("med3(2,3,3) = " + med3(2,3,3));
+		System.out.println("med3(1,2,3) = " + med3(1,2,3));
+
+
+
+		System.out.println("Q5_ì—°ìŠµë¬¸ì œ 5ë²ˆ 22p");
+		System.out.println("ì„¸ ê°’ì˜ ì¤‘ì•™ê°’ì€ : " + med3_2(a, b, c) + " ìž…ë‹ˆë‹¤.");
 
 	}
 
@@ -51,26 +51,26 @@ public class Ex04_05_22p {
 		} else {
 			return b;
 		}
-		
+
 	}
 
 	static int med3_2(int a, int b, int c) {
 		if((b >= a && c <= a) || (b <= a && c >= a)) {
 			return a;
-			
+
 		} else if((a > b && c < b) || (a < b && c > b)) {
 			return b;
 		}
-		
+
 		return c;
-		
-		// Ã¹¹øÂ° if¹®¿¡ÀÖ´Â b>=a ¿Í b<=a ´Â ¼ö½Ä¸¸ º¸¸é ´Ù¸£´Ù°í »ý°¢ÇÒ ¼ö ÀÖÁö¸¸
-		// ¼ö½Ä¸¸ µÚÁýÀº Â÷ÀÌ°í ½ÇÁúÀûÀ¸·Î´Â °°Àº ÆÇ´ÜÀÌ¹Ç·Î È¿À²ÀÌ ³ªºüÁø´Ù.
-		
-		// Ã¹¹øÂ° if¹®ÀÌ ¼º¸³ÇÑ ÈÄ µÎ¹øÂ° else if¹®¿¡¼­ Ã¹¹øÂ° if¹®°ú ½ÇÁúÀûÀ¸·Î 
-		// °°Àº ¼ö½ÄÀ» ¼öÇàÇÏ¹Ç·Î È¿À²ÀÌ ³ªºüÁø´Ù.
+
+		// ì²«ë²ˆì§¸ ifë¬¸ì—ìžˆëŠ” b>=a ì™€ b<=a ëŠ” ìˆ˜ì‹ë§Œ ë³´ë©´ ë‹¤ë¥´ë‹¤ê³  ìƒê°í•  ìˆ˜ ìžˆì§€ë§Œ
+		// ìˆ˜ì‹ë§Œ ë’¤ì§‘ì€ ì°¨ì´ê³  ì‹¤ì§ˆì ìœ¼ë¡œëŠ” ê°™ì€ íŒë‹¨ì´ë¯€ë¡œ íš¨ìœ¨ì´ ë‚˜ë¹ ì§„ë‹¤.
+
+		// ì²«ë²ˆì§¸ ifë¬¸ì´ ì„±ë¦½í•œ í›„ ë‘ë²ˆì§¸ else ifë¬¸ì—ì„œ ì²«ë²ˆì§¸ ifë¬¸ê³¼ ì‹¤ì§ˆì ìœ¼ë¡œ
+		// ê°™ì€ ìˆ˜ì‹ì„ ìˆ˜í–‰í•˜ë¯€ë¡œ íš¨ìœ¨ì´ ë‚˜ë¹ ì§„ë‹¤.
 	}
 
-	
-	
+
+
 }

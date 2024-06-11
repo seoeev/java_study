@@ -5,25 +5,25 @@ import java.util.Scanner;
 public class Ex10_33p {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 		int a, b;
-		
-		System.out.print("aÀÇ °ª : ");
+
+		System.out.print("aì˜ ê°’ : ");
 		a = sc.nextInt();
-		
+
 		do {
-			System.out.print("bÀÇ °ª : ");
+			System.out.print("bì˜ ê°’ : ");
 			b = sc.nextInt();
-			
+
 			if(b <= a) {
-				System.out.println("aº¸´Ù Å« °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä!");
+				System.out.println("aë³´ë‹¤ í° ê°’ì„ ì…ë ¥í•˜ì„¸ìš”!");
 			}
 		} while (b <= a);
-		
-		System.out.println("b - a´Â : " + (b-a));
-		
+
+		System.out.println("b - aëŠ” : " + (b-a));
+
 	}
-	
+
 
 }

@@ -3,19 +3,19 @@ package ch01;
 public class Ex09_30p {
 
 	public static void main(String[] args) {
-		// a b »çÀÌÀÇ ÇÕ
+		// a b ì‚¬ì´ì˜ í•©
 		int a = 2, b = 10;
-		System.out.println(a + " ºÎÅÍ " + b + " ±îÁöÀÇ ÇÕ : " + sumof(a, b));
-		
+		System.out.println(a + " ë¶€í„° " + b + " ê¹Œì§€ì˜ í•© : " + sumof(a, b));
+
 	}
-	
+
 	static int sumof(int a, int b) {
 		int result = 0;
-		
+
 		for (int i = a; i <= b; i++) {
 			result += i;
 		}
-		
+
 		return result;
 	}
 

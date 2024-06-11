@@ -5,20 +5,20 @@ import java.util.Scanner;
 public class Ex11_33p {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 		int a, result;
-		
-		System.out.print("¾çÀÇ Á¤¼ö¸¦ ÀÔ·Â : ");
+
+		System.out.print("ì–‘ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ : ");
 		a = sc.nextInt();
 
-		// ÀÚ¸´¼ö ±¸ÇÏ±â
+		// ìë¦¿ìˆ˜ êµ¬í•˜ê¸°
 		String str = String.valueOf(a);
 		result = str.toCharArray().length;
-		
-		System.out.println("±× ¼ö´Â " + result + "ÀÚ¸® ÀÔ´Ï´Ù." );
-		
+
+		System.out.println("ê·¸ ìˆ˜ëŠ” " + result + "ìë¦¬ ì…ë‹ˆë‹¤." );
+
 	}
-	
+
 
 }

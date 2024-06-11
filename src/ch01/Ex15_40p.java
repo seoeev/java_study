@@ -3,76 +3,76 @@ package ch01;
 public class Ex15_40p {
 
 	public static void main(String[] args) {
-		
-		int n = 4;	// »ï°¢Çü ´Ü
-		
-		System.out.println(n + "´Ü Á÷°¢ »ï°¢Çü (LB)");
+
+		int n = 4;	// ì‚¼ê°í˜• ë‹¨
+
+		System.out.println(n + "ë‹¨ ì§ê° ì‚¼ê°í˜• (LB)");
 		triangleLB(n);
-		
-		System.out.println(n + "´Ü Á÷°¢ »ï°¢Çü (LU)");		
+
+		System.out.println(n + "ë‹¨ ì§ê° ì‚¼ê°í˜• (LU)");
 		triangleLU(n);
 
-		System.out.println(n + "´Ü Á÷°¢ »ï°¢Çü (RB)");		
+		System.out.println(n + "ë‹¨ ì§ê° ì‚¼ê°í˜• (RB)");
 		triangleRB(n);
 
-		System.out.println(n + "´Ü Á÷°¢ »ï°¢Çü (RU)");		
+		System.out.println(n + "ë‹¨ ì§ê° ì‚¼ê°í˜• (RU)");
 		triangleRU(n);
 
-		
+
 	}
-	
-	// ¿ŞÂÊ ¾Æ·¡
+
+	// ì™¼ìª½ ì•„ë˜
 	static void triangleLB(int n) {
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= i; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
-		}		
+		}
 	}
-	
-	// ¿ŞÂÊ À§
+
+	// ì™¼ìª½ ìœ„
 	static void triangleLU(int n) {
 		for (int i = n; i >= 1; i--) {
 			for (int j = 1; j <= i; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
-		}		
+		}
 	}
 
-	
-	// ¿À¸¥ÂÊ ¾Æ·¡
+
+	// ì˜¤ë¥¸ìª½ ì•„ë˜
 	static void triangleRB(int n) {
-		
+
 		for (int i = 1; i <= n; i++) {
 			for (int j = n; j > i; j--) {
-				System.out.print(" ");				
+				System.out.print(" ");
 			}
-			
+
 			for (int j = 1; j <= i; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
-		}		
+		}
 	}
-	
-	
-	// ¿À¸¥ÂÊ À§
+
+
+	// ì˜¤ë¥¸ìª½ ìœ„
 	static void triangleRU(int n) {
 		for (int i = n; i >= 1; i--) {
-			
+
 			for (int j = i; j < n; j++) {
-				System.out.print(" ");				
+				System.out.print(" ");
 			}
-			
-			
+
+
 			for (int j = 1; j <= i; j++) {
 				System.out.print("*");
 			}
 			System.out.println();
-		}		
+		}
 	}
-	
+
 
 }

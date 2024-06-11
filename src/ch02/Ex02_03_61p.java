@@ -9,33 +9,33 @@ public class Ex02_03_61p {
 		a[idx1] = a[idx2];
 		a[idx2] = t;
 	}
-	
+
 	static void reverse(int[] a) {
 		System.out.println(Arrays.toString(a));
 		for (int i = 0; i < a.length / 2; i++) {
-			System.out.println("a["+ i +"]°ú(¿Í) a["+ (a.length -i -1) +"]¸¦ ±³È¯ÇÕ´Ï´Ù.");
-			
+			System.out.println("a["+ i +"]ê³¼(ì™€) a["+ (a.length -i -1) +"]ë¥¼ êµí™˜í•©ë‹ˆë‹¤.");
+
 			swap(a, i, a.length - i -1);
-			System.out.println(Arrays.toString(a));			
+			System.out.println(Arrays.toString(a));
 		}
 	}
-	
+
 	static int sumOf(int[] a) {
 		int sum = 0;
-		
+
 		for (int i = 0; i < a.length; i++) {
 			sum += a[i];
 		}
-		
+
 		return sum;
 	}
-	
+
 	public static void main(String[] args) {
 		int[] arr = {5, 10, 73, 2, -5, 42};
-		
+
 		reverse(arr);
-		
-		System.out.println("¹è¿­ÀÇ ÇÕ : " + sumOf(arr));
+
+		System.out.println("ë°°ì—´ì˜ í•© : " + sumOf(arr));
 	}
 
 }
